@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for in-page nav */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle gradient page background */
+body {
+  @apply bg-mist text-ink;
+  background-image:
+    radial-gradient(40rem 40rem at 10% -10%, rgba(125, 211, 252, 0.25), transparent),
+    radial-gradient(35rem 35rem at 110% 10%, rgba(124, 58, 237, 0.20), transparent),
+    radial-gradient(30rem 30rem at 30% 120%, rgba(93, 228, 199, 0.20), transparent);
+}
+
+/* Utility for colorful underline accents */
+.decoborder {
+  background-image: linear-gradient(
+    to right, 
+    theme('colors.accent.2'), 
+    theme('colors.accent.1'), 
+    theme('colors.accent.3'));
+  height: 3px;
+}
