@@ -40,25 +40,33 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right: cat logo */}
+        {/* Right: cat logo + glow (glow centered/locked to cat) */}
         <motion.div
           className="relative flex items-center justify-center sm:justify-end lg:-mr-14 xl:-mr-24"
           initial={{ opacity: 0, scale: 0.92 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          {/* Glow */}
-          <div className="pointer-events-none absolute right-[-6rem] -top-8 h-[28rem] w-[28rem] rounded-full bg-gradient-to-r from-accent-2 via-accent-1 to-accent-3 blur-3xl opacity-40" />
-
-          {/* Cat icon */}
-          <Image
-            src="/cat.png"
-            alt="Nimtion cat logo"
-            width={700}
-            height={700}
-            priority
-            className="relative z-10 h-auto w-[22rem] sm:w-[26rem] lg:w-[30rem]"
-          />
+          {/* local positioning context for glow + cat */}
+          <div className="relative">
+            {/* Glow stays centered behind the cat and scales with it */}
+            <div className="
+              pointer-events-none absolute left-1/2 top-1/2
+              -translate-x-1/2 -translate-y-1/2
+              w-[115%] sm:w-[125%] lg:w-[135%] aspect-square
+              rounded-full bg-gradient-to-r from-accent-2 via-accent-1 to-accent-3
+              blur-3xl opacity-40
+            " />
+            {/* Cat icon */}
+            <Image
+              src="/cat.png"
+              alt="Nimtion cat logo"
+              width={700}
+              height={700}
+              priority
+              className="relative z-10 h-auto w-[22rem] sm:w-[26rem] lg:w-[30rem]"
+            />
+          </div>
         </motion.div>
       </div>
     </section>

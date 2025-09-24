@@ -1,41 +1,43 @@
 "use client";
 
-type ServiceItem = { title: string; desc: string };
+type ServiceItem = {
+  title: string;
+  desc: string;
+};
 
 const items: ServiceItem[] = [
   {
-    title: "Finance Ops Automation",
-    desc: "Reconciliations, royalty/fee reports, cash flows and more..."
+    title: "AI Strategy for Finance Teams",
+    desc: "We find where AI can cut costs and save hours in your finance processes. From variance checks to faster closes, we map use cases, estimate ROI, and design a 90-day pilot that makes sense for your business.",
   },
   {
-    title: "Data Pipelines",
-    desc: "Validate, transform, and sync across CRMs, ERPs, spreadsheets, and DBs; and of course Excel :D"
+    title: "Clean & Connect Your Data",
+    desc: "Budgets in Sheets, forecasts in Excel, invoices in SAP… we connect and clean it all so your AI copilots run smoothly. Think of us as the team that makes your numbers actually talk to each other.",
   },
   {
-    title: "AI Powered Analyzes on Your Reports",
-    desc: "We can make best AI models pre-analyze your reports after automation process."
+    title: "Choose & Test the Right Models",
+    desc: "We pick the right AI model for your needs and build quick prototypes. Whether it’s explaining variances or double-checking forecasts, we prove value fast with live demos, not just promises.",
   },
   {
-    title: "Dashboards and QA",
-    desc: "Consistent tables, QA checks, and single-source-of-truth exports."
+    title: "AI Copilots in Daily Workflow",
+    desc: "Your P&L that explains itself. An AI sidekick that flags anomalies before auditors do. We put copilots right where you work — Excel, Slack, SAP, or even email — so they fit naturally into your workflow.",
   },
   {
-    title: "Process Design",
-    desc: "Map the real workflow, remove friction, and measure ROI quickly. We also want immediate results, you are not alone."
+    title: "Stay Safe & Compliant",
+    desc: "We add audit logs, controls, and EU AI Act-friendly guardrails from day one. So when compliance asks ‘where did that number come from?’, you’ll have the answer ready without breaking a sweat.",
   },
   {
-    title: "Lightweight Integrations",
-    desc: "APIs, webhooks, Sheets, and internal tools—no heavy platforms required. All in-house, not a subscription model."
+    title: "Train & Scale with Confidence",
+    desc: "We train your finance team so they actually use AI tools (and don’t ignore them like another dashboard). Playbooks, workshops, and KPIs help adoption stick — and set you up to scale across the business.",
   }
 ];
 
-/** Accent helpers: line bg + matching number text color */
 const accentByIndex = (i: number) =>
   i % 3 === 0
-    ? { line: "bg-accent-2/60", text: "text-accent-2" } // purple
+    ? { line: "bg-accent-2/60", text: "text-accent-2", ring: "ring-accent-2/20" }
     : i % 3 === 1
-    ? { line: "bg-accent-1/60", text: "text-accent-1" } // mint
-    : { line: "bg-accent-3/60", text: "text-accent-3" }; // amber
+    ? { line: "bg-accent-1/60", text: "text-accent-1", ring: "ring-accent-1/20" }
+    : { line: "bg-accent-3/60", text: "text-accent-3", ring: "ring-accent-3/20" };
 
 function ServiceCard({
   i,
@@ -50,7 +52,9 @@ function ServiceCard({
 
   return (
     <article
-      className={`mb-12 ${align === "left" ? "text-right pr-8" : "text-left pl-8"}`}
+      className={`group rounded-2xl border border-ink/5 bg-white/60 p-6 backdrop-blur transition
+                  hover:shadow-lg hover:ring-2 ${colors.ring}
+                  ${align === "left" ? "text-right pr-8" : "text-left pl-8"}`}
     >
       {/* number + divider */}
       <div
@@ -87,25 +91,24 @@ function ServiceCard({
 export function Services() {
   return (
     <section id="services" className="mx-auto max-w-6xl px-4 py-16">
-      {/* Section heading */}
-      <h2 className="mb-16 text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
-        What Can We Offer You? ALPER REVIZE LAZIM
-      </h2>
+      <div className="mb-12 text-center">
+        <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+          What we offer you and how we do it? !!!! ALPER !!!!
+        </h2>
+        <p className="mx-auto mt-3 max-w-2xl text-ink/70">
+          We do not just advice - we implement and we own the outcomes.
+        </p>
+      </div>
 
-      <div className="grid md:grid-cols-2">
-        {/* left column: 1,2,3 */}
-        <div>
-          {items.slice(0, 3).map((s, i) => (
-            <ServiceCard key={s.title} i={i} s={s} align="right" />
-          ))}
-        </div>
-
-        {/* right column: 4,5,6 */}
-        <div>
-          {items.slice(3).map((s, i) => (
-            <ServiceCard key={s.title} i={i + 3} s={s} align="left" />
-          ))}
-        </div>
+      <div className="grid md:grid-cols-2 gap-x-8 gap-y-16">
+        {items.map((s, i) => (
+          <ServiceCard
+            key={s.title}
+            i={i}
+            s={s}
+            align={i % 2 === 0 ? "right" : "left"} // alternate
+          />
+        ))}
       </div>
     </section>
   );
