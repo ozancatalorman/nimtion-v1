@@ -4,12 +4,23 @@ import { sendContactEmail } from "@/lib/email";
 
 export async function POST(req: NextRequest) {
   try {
+    console.log("📩 Incoming contact request");
+
     const body = await req.json();
+    console.log("📦 Raw body:", body);
+
     const data = contactSchema.parse(body);
-    await sendContactEmail(data);
-    return NextResponse.json({ ok: true });
+    console.log("✅ Validation passed:", data);
+
+    const result = await sendContactEmail(data);
+    console.log("📤 sendContactEmail result:", result);
+
+    return NextResponse.json(result);
   } catch (err) {
-    console.error(err);
-    return NextResponse.json({ ok: false, error: "Invalid request" }, { status: 400 });
+    console.error("❌ Error handling contact form:", err);
+    return NextResponse.json(
+      { ok: false, error: "Invalid request" },
+      { status: 400 }
+    );
   }
 }
