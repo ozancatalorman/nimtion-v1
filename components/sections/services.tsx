@@ -7,28 +7,28 @@ type ServiceItem = {
 
 const items: ServiceItem[] = [
   {
-    title: "AI Strategy for Finance Teams",
-    desc: "We find where AI can cut costs and save hours in your finance processes. From variance checks to faster closes, we map use cases, estimate ROI, and design a 90-day pilot that makes sense for your business.",
+    title: "Spot & Prove AI Value",
+    desc: "We dig into your finance workflows, uncover where time and money are wasted, and design a 90-day pilot that proves the impact. Real results, not slide decks.",
   },
   {
-    title: "Clean & Connect Your Data",
-    desc: "Budgets in Sheets, forecasts in Excel, invoices in SAP… we connect and clean it all so your AI copilots run smoothly. Think of us as the team that makes your numbers actually talk to each other.",
+    title: "Unify Your Data",
+    desc: "Budgets in Sheets, forecasts in Excel, invoices in SAP — we connect and clean it all. Once your numbers speak the same language, AI can finally do its job.",
   },
   {
-    title: "Choose & Test the Right Models",
-    desc: "We pick the right AI model for your needs and build quick prototypes. Whether it’s explaining variances or double-checking forecasts, we prove value fast with live demos, not just promises.",
+    title: "Pick the Right AI",
+    desc: "Not every model fits every problem. We test options on your real data and deliver working prototypes fast. You’ll see what works in practice, not theory.",
   },
   {
-    title: "AI Copilots in Daily Workflow",
-    desc: "Your P&L that explains itself. An AI sidekick that flags anomalies before auditors do. We put copilots right where you work — Excel, Slack, SAP, or even email — so they fit naturally into your workflow.",
+    title: "AI in Daily Workflow",
+    desc: "We drop copilots right into the tools you already live in — Excel, Slack, SAP, email. They explain, flag, and assist without adding new tabs to your day.",
   },
   {
-    title: "Stay Safe & Compliant",
-    desc: "We add audit logs, controls, and EU AI Act-friendly guardrails from day one. So when compliance asks ‘where did that number come from?’, you’ll have the answer ready without breaking a sweat.",
+    title: "Secure & In-House",
+    desc: "Every workflow we build is designed with enterprise-grade security. Whether it’s your own systems or trusted AI tools, we keep data safe, controlled, and compliant from day one.",
   },
   {
-    title: "Train & Scale with Confidence",
-    desc: "We train your finance team so they actually use AI tools (and don’t ignore them like another dashboard). Playbooks, workshops, and KPIs help adoption stick — and set you up to scale across the business.",
+    title: "Adoption That Sticks",
+    desc: "AI only works if people actually use it. We train your team with playbooks and workshops, track adoption with KPIs, and stay until it’s second nature.",
   }
 ];
 
@@ -93,10 +93,10 @@ export function Services() {
     <section id="services" className="mx-auto max-w-6xl px-4 py-16">
       <div className="mb-12 text-center">
         <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-          What we offer you and how we do it? !!!! ALPER !!!!
+          What we offer you and how we do it?
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-ink/70">
-          We do not just advice - we implement and we own the outcomes.
+          We do not just advice - we find the problem, implement the solution and we own the outcomes.
         </p>
       </div>
 
