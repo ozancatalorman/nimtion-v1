@@ -17,8 +17,7 @@ export function About() {
           <br />
           But most importantly — we don’t just wait for you to tell us the
           problems. We dive into your workflows, uncover what’s slowing you
-          down, and design AI solutions that actually fix it. Together, we speak
-          both Excel and API. clean data. Together, we speak both{" "}
+          down, and design AI solutions that actually fix it. Together, we speak both{" "}
           <span className="font-semibold">Excel</span> and{" "}
           <span className="font-semibold">API</span>.
         </p>
