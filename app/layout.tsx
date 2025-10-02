@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nimtion",
-  description: "We deal with the busywork so your team can focus on impact."
+  description: "We deal with the busywork so you can focus on impact."
 };
 
 export default function RootLayout({
