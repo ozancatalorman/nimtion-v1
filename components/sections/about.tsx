@@ -27,7 +27,7 @@ export function About() {
           <br />
           Endless reconciliations, variance hunts, reports nobody reads. We know
           what steals your time - and sometimes you do not even see it until
-          someone points it out. That’s why we build copilots that handle the
+          someone points it out. That’s why we come, identify the problems and build systems that handle the
           boring stuff — so humans (
           <span className="font-semibold">yes, that means you</span>) can focus
           on strategy, creativity, and the big picture.
@@ -36,9 +36,9 @@ export function About() {
         <p>
           <span className="font-semibold">Our mission is simple:</span>
           <br />
-          Less time fighting spreadsheets. More time leading with insights. And
+          Less time fighting spreadsheets; more time leading with insights. And
           unlike traditional consultants, we don’t wait for a brief or deliver a
-          shiny deck — we diagnose the problems, implement the fixes, and stay
+          shiny deck — we diagnose the problems, implement the solutions, and stay
           until it works actually works.
         </p>
 

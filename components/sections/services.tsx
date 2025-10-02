@@ -7,28 +7,28 @@ type ServiceItem = {
 
 const items: ServiceItem[] = [
   {
-    title: "Spot & Prove AI Value",
-    desc: "We dig into your finance workflows, uncover where time and money are wasted, and design a 90-day pilot that proves the impact. Real results, not slide decks.",
+    title: "Problem Discovery",
+    desc: "We analyze your workflows end-to-end, reveal the bottlenecks even your teams can’t see, and design solutions that save hours and cash. Every solution we design pays back with measurable savings, not wiht vague promises.",
   },
   {
-    title: "Unify Your Data",
-    desc: "Budgets in Sheets, forecasts in Excel, invoices in SAP — we connect and clean it all. Once your numbers speak the same language, AI can finally do its job.",
+    title: "Connect & Clean Data",
+    desc: "Scattered budgets, forecasts, and invoices? We unify and clean them so numbers finally speak the same language. Once your foundation is solid, AI delivers results.",
   },
   {
-    title: "Pick the Right AI",
-    desc: "Not every model fits every problem. We test options on your real data and deliver working prototypes fast. You’ll see what works in practice, not theory.",
+    title: "The Right AI, Not the Shiny AI",
+    desc: "We test models on the real data, not in theory. You’ll get a working prototype fast — proof that it actually solves your problem.",
   },
   {
-    title: "AI in Daily Workflow",
-    desc: "We drop copilots right into the tools you already live in — Excel, Slack, SAP, email. They explain, flag, and assist without adding new tabs to your day.",
+    title: "More Than Automation",
+    desc: "We don’t stop at building automated reports. We design AI copilots that highlight anomalies, predict outcomes, and free your team for strategy.",
   },
   {
-    title: "Secure & In-House",
-    desc: "Every workflow we build is designed with enterprise-grade security. Whether it’s your own systems or trusted AI tools, we keep data safe, controlled, and compliant from day one.",
+    title: "Security Matters",
+    desc: "Your data stays yours. We build automations with enterprise-grade security, compliance from day one, and deployment on your terms — cloud, hybrid, or in-house.",
   },
   {
-    title: "Adoption That Sticks",
-    desc: "AI only works if people actually use it. We train your team with playbooks and workshops, track adoption with KPIs, and stay until it’s second nature.",
+    title: " Make It Stick",
+    desc: "We train your team with playbooks and workshops, track adoption with KPIs, and stay until AI becomes second nature — not shelfware.",
   }
 ];
 
