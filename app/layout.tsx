@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Nimtion",
   description: "We deal with the busywork so your team can focus on impact.",
   icons: {
-    icon: "/favicon.ico",              // 32x32 ICO veya PNG
-    apple: "/apple-touch-icon.png",    // iOS için opsiyonel
+    icon: "/public/nimtionicon.png",              
+    apple: "/public/nimtionicon.png",    
   },
 };
 
