@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" href="/nimtionicon.png" />
+        <link rel="icon" type="image/png" href="/cat.png" />
       </head>
       <body className="min-h-screen antialiased">{children}</body>
     </html>
