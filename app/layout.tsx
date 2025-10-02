@@ -6,7 +6,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nimtion",
-  description: "We deal with the busywork so your team can focus on impact."
+  description: "We deal with the busywork so your team can focus on impact.",
+  icons: {
+    icon: "/favicon.ico",              // 32x32 ICO veya PNG
+    apple: "/apple-touch-icon.png",    // iOS için opsiyonel
+  },
 };
 
 export default function RootLayout({
