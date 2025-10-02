@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nimtion",
   description: "We deal with the busywork so your team can focus on impact.",
+  icons: {
+      icon : { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },  
+    }
 };
 
 export default function RootLayout({
