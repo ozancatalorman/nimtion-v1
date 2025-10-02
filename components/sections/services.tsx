@@ -19,12 +19,12 @@ const items: ServiceItem[] = [
     desc: "We test models on the real data, not in theory. You’ll get a working prototype fast — proof that it actually solves your problem.",
   },
   {
-    title: "More Than Automation",
-    desc: "We don’t stop at building automated reports. We design AI copilots that highlight anomalies, predict outcomes, and free your team for strategy.",
-  },
-  {
     title: "Security Matters",
     desc: "Your data stays yours. We build automations with enterprise-grade security, compliance from day one, and deployment on your terms — cloud, hybrid, or in-house.",
+  },
+  {
+    title: "More Than Automation",
+    desc: "We don’t stop at building automated reports. We design AI copilots that highlight anomalies, predict outcomes, and free your team for strategy.",
   },
   {
     title: " Make It Stick",
