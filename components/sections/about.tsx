@@ -11,7 +11,7 @@ export function About() {
             Based in Istanbul, finance-first.
           </span>
           <br />
-          Based in Istanbul, finance-first. We’re a team of finance folks who
+          We’re a team of finance folks who
           know the pain of midnight closes, and tech nerds who get way too
           excited about connectors, copilots, and clean data.
           <br />
