@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./global.css";
 import { Inter } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/cat.png" />
       </head>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+      {children}
+      <Analytics />
+      </body>
     </html>
   );
 }
