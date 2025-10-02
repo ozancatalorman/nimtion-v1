@@ -6,10 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nimtion",
-  description: "We deal with the busywork so your team can focus on impact.",
-  icons: {
-      icon : { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },  
-    }
+  description: "We deal with the busywork so your team can focus on impact."
 };
 
 export default function RootLayout({
@@ -19,6 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="/nimtionicon.png" />
+      </head>
       <body className="min-h-screen antialiased">{children}</body>
     </html>
   );
