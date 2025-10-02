@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nimtion",
   description: "We deal with the busywork so your team can focus on impact.",
-  icons: { icon: "/public/cat.ico" },
 };
 
 export default function RootLayout({
