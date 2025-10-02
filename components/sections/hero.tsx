@@ -9,7 +9,7 @@ export function Hero() {
         {/* Left: text */}
         <div className="flex flex-col justify-center">
           <motion.h1
-            className="whitespace-nowrap text-4xl font-extrabold leading-tight sm:text-5xl"
+            className="whitespace-normal sm:whitespace-nowrap text-4xl font-extrabold leading-tight sm:text-5xl"
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
