@@ -18,7 +18,7 @@ export function Hero() {
             <span className="block bg-gradient-to-r from-accent-2 via-accent-1 to-accent-3 bg-clip-text text-transparent">
               Touch what matters
             </span>
-          </motion.h1>
+          </motion.h1> 
 
           <p className="mt-5 max-w-prose text-ink/80">
             We don’t replace people — we replace busywork, so people can do what only humans can.
